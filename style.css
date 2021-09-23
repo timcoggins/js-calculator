@@ -1,0 +1,81 @@
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.info {
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 300px;
+  background: #323230;
+  margin: 0 auto;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.operation {
+  text-align: left;
+  font-size: 30px;
+  padding: 10px;
+  color: gray;
+  align-self: flex-start;
+}
+
+.result {
+  text-align: right;
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+  align-self: flex-end;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+.button-grid > div {
+  padding: 10px;
+}
+
+.lightgrey-button {
+  background: #646462;
+}
+
+.lightgrey-button:hover {
+  background: #868684;
+  cursor: pointer;
+}
+
+.orange-button {
+  background: rgb(254, 159, 10) !important;
+}
+
+.orange-button:hover {
+  background: rgb(255, 182, 65) !important;
+}
+
+.darkgrey-button {
+  background: #464443 !important;
+}
+
+.darkgrey-button:hover {
+  background: #5f5c5b !important;
+}
+
+.wide-button {
+  grid-column: 1 / span 2;
+}
