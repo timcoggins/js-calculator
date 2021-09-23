@@ -123,11 +123,24 @@ function updateOperation(newOperation) {
     else if (nextOperation === "divide") lastNumber = lastNumber / currentNumber;
     else lastNumber = currentNumber;
 
+    // TODO Add percent operator
+
     userInput.innerText = lastNumber;
     waitForNextValue = true;
     
     nextOperation = newOperation;
     updateUserOperation(nextOperation);
+
+    return;
+}
+
+
+/**
+ * TODO: updateClearButton
+ *
+ */
+
+function manageClearButton() {
 
     return;
 }
@@ -142,7 +155,7 @@ function updateUserOperation(operation) {
     if(operation === "add") userOperation.innerText = "+";
     if(operation === "subtract") userOperation.innerText = "-";
     if(operation === "multiply") userOperation.innerText = "×";
-    if(operation === "division") userOperation.innerText = "÷";
+    if(operation === "divide") userOperation.innerText = "÷";
     if(operation === "equal") userOperation.innerText = "";
     if(operation === "") userOperation.innerText = "";
 }
